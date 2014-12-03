@@ -1,6 +1,7 @@
 
 html { 
   background-color: goldenRod;
+  text-align: center;
 }
   h1 {
     border: 5px solid red;
@@ -10,6 +11,3 @@ html {
   p { 
     font: 25px 'Yanone Kaffeesatz', sans-serif;
   }
-img {
-  text-align: center;
-}
