@@ -5,7 +5,11 @@ html {
   h1 {
     border: 5px solid red;
     font: 100px 'Lobster', cursive;
+    text-align: center;
   }
   p { 
     font: 25px 'Yanone Kaffeesatz', sans-serif;
   }
+img {
+  text-align: center;
+}
