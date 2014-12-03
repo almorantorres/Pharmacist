@@ -1,10 +1,11 @@
  
  html {
-    background-color: wheat;
+    background-color: snow;
     color: black;
     text-align: center;
   }
   h1 {
+    color: snow;
     background-color: darkMagenta;
   }
   img {
