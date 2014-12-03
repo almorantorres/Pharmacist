@@ -3,9 +3,8 @@ html {
   background-color: goldenRod;
 }
   h1 {
-    font-size: 30px; 
-    font-family: 'Lobster', cursive;
+    font: 30px 'Lobster', cursive;
   }
   p { 
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font: 20px 'Yanone Kaffeesatz', sans-serif;
   }
