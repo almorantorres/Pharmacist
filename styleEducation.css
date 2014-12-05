@@ -6,7 +6,7 @@ html {
   h1 {
     background-color: darkMagenta;
     color: bisque;
-    border: 5px inset red;
+    border: 10px inset red;
     font: 100px 'Lobster', cursive;
     text-align: center;
   }
