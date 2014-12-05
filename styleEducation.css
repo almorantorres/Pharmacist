@@ -3,7 +3,7 @@ html {
   background-color: burlyWood;
   text-align: center;
 }
-  h1 {
+  h1:hover {
     background-color: darkMagenta;
     color: bisque;
     border: 5px solid red;
