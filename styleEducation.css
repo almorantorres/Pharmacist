@@ -12,6 +12,7 @@ html {
   }
   ul { 
     background-color: wheat;
+    border: 6px outset blue;
     font: 25px 'Yanone Kaffeesatz', sans-serif;
     text-align: left;
   }
