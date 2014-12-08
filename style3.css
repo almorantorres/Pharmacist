@@ -2,3 +2,13 @@ html {
   background-color= wheat;
   color= black;
 }
+h1 {
+  background-color= darkMagenta;
+  border= 5px solid red;
+}
+img {
+  bprder= 5px solid darkMagenta;
+}
+ul {
+  background-color= tan
+}
