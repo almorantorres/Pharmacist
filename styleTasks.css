@@ -1,17 +1,17 @@
 
 html {
-  background-color= wheat;
-  color= black;
-  text-align= center;
+  background-color: wheat;
+  color: black;
+  text-align: center;
 }
 h1 {
-  background-color= darkMagenta;
-  border= 5px solid red;
+  background-color: darkMagenta;
+  border: 5px solid red;
 }
 img {
-  bprder= 5px solid darkMagenta;
-  text-align= center;
+  bprder: 5px solid darkMagenta;
+  text-align: center;
 }
 ul {
-  background-color= tan;
+  background-color: tan;
 }
