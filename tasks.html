@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
+<head>
+
+<!--LIGHTBOX-->
+<link href="tanstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
+
+<!--ROLLOVER-->
+<script type="text/javascript">
+if(document.images)
+{
+  var image_array = new Array();
+	
+  // path to the directory with images
+  var path = 'images/';
+  // enumeration of the "active" images
+  image_array[0] = path + "image1.gif";
+  image_array[1] = path + "image2.gif";
+  var preload_image = new Array ();
+ 
+  for(var i=0; i<image_array.length; i++)
+  {
+    preload_image[i]= new Image();
+    preload_image[i].src = image_array[i];
+  }
+}
+function rollover(name, filename)
+{
+  document.images[name].src = filename;
+}
+</script>
+
+
 <link href="styleTasks.css" rel="stylesheet" type="text/css">
 <h1>Daily tasks preformed by pharmacists</h1>
+
+<!--THIS IS THE IMAGE WITH THE ROLLOVER AND LIGHTBOX-->
+<a href="http://www.healthcare-salaries.com/wp-content/uploads/2013/07/pharmacist-salary.jpg" rel="lightbox" onmouseover="rollover('button1','holding-money.jpg')" 
+            onmouseout="rollover('button1','http://www.healthcare-salaries.com/wp-content/uploads/2013/07/pharmacist-salary.jpg')"> 
+<img name="button1" src="http://www.healthcare-salaries.com/wp-content/uploads/2013/07/pharmacist-salary.jpg"></a>
+
 <img src='http://www.healthcare-salaries.com/wp-content/uploads/2013/07/pharmacist-salary.jpg'>
 <br>Image from <a href='http://www.healthcare-salaries.com/allied-health-professionals/pharmacist-salary'>Healthcare-salaries</a>
+</head>
+<body>
 <p>Pharmacists are normally the first first ones that are contacted by patients with questions regarding someones health. This makes pharmacist have a significant role in managing the amount of medicine that the patient takes, and transferring them to a doctors.<br> The many roles that doctors have include the following:</p>
 <ul>
 <li>Regulation of medicine being taken by patient, and observation of amount taken.
@@ -19,5 +63,7 @@
 Click <a href="description.html">here</a> for a brief description on what the career involves.<br>
 Click <a href="education.html">here</a> to find out what you need to become a pharmacist!<br>
 Click <a href="index.html">here</a> to go to the main page.<br><br>
+
+  </body>
 </html>
 Citations: <br>Pharmacist: Salary. (n.d.). Retrieved December 9, 2014, from http://money.usnews.com/careers/best-jobs/pharmacist/salary <br> Pharmacist. (2014, July 12). Retrieved December 9, 2014, from http://en.wikipedia.org/wiki/Pharmacist
