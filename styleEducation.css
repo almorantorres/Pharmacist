@@ -16,4 +16,7 @@ html {
     font: 25px 'Yanone Kaffeesatz', sans-serif;
     text-align: left;
   }
-
+p {
+  left: 30px;
+  right: 30px;
+}
