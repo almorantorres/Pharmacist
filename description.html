@@ -1,6 +1,47 @@
 <!DOCTYPE html>
+<html>
+<!--LIGHTBOX-->
+<link href="tanstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
+<!--ROLLOVER-->
+<script type="text/javascript">
+if(document.images)
+{
+  var image_array = new Array();
+	
+  // path to the directory with images
+  var path = 'images/';
+  // enumeration of the "active" images
+  image_array[0] = path + "image1.gif";
+  image_array[1] = path + "image2.gif";
+  var preload_image = new Array ();
+ 
+  for(var i=0; i<image_array.length; i++)
+  {
+    preload_image[i]= new Image();
+    preload_image[i].src = image_array[i];
+  }
+}
+function rollover(name, filename)
+{
+  document.images[name].src = filename;
+}
+</script>
+
+
 <link href="style2.css" rel="stylesheet" type="text/css">
 <h1> Description of the career</h1>
+
+<!--ROLLOVER AND LIGHTBOX IMAGE-->
+<a href="http://blogs.intel.com/jobs/files/2012/11/LisaDepew.jpg" rel="lightbox" onmouseover="rollover('button1','LisaDepew.jpg')" 
+            onmouseout="rollover('button1','http://blogs.intel.com/jobs/files/2012/11/LisaDepew.jpg')"> 
+<img name="button1" src="http://blogs.intel.com/jobs/files/2012/11/LisaDepew.jpg"></a>
+
+
 <img src="http://furtheralongtheroad.com/wp-content/uploads/2014/08/pharmacist-male.jpg" alt="A pharmacist"><br>
 Image from <a href="http://furtheralongtheroad.com/how-long-does-it-take-to-become-a-pharmacist/">Further Along the Road.</a><br>
 </head>
@@ -14,3 +55,4 @@ Bureau of Labor Statistics, U.S. Department of Labor, Occupational Outlook Handb
 on the Internet at http://www.bls.gov/ooh/healthcare/pharmacists.htm (visited December 03, 2014).  
     
   </footer>
+</html>
