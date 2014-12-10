@@ -48,7 +48,8 @@ function rollover(name, filename)
 <br>Image from <a href='http://www.healthcare-salaries.com/allied-health-professionals/pharmacist-salary'>Healthcare-salaries</a> and <a href="http://image.shutterstock.com/display_pic_with_logo/310/310,1105606506,1/stock-photo-hand-holding-money-100285.jpg">Shutterstock</a>
 </head>
 <body>
-<p>Pharmacists are normally the first first ones that are contacted by patients with questions regarding someones health. This makes pharmacist have a significant role in managing the amount of medicine that the patient takes, and transferring them to a doctors.<br> The many roles that doctors have include the following:</p>
+<p>Pharmacists are normally the first first ones that are contacted by patients with questions regarding someones health. This makes pharmacist have a significant role in managing the amount of medicine that the patient takes, and transferring them to a doctors.<br> </p>
+<h3>The many roles that doctors have include the following:</h3>
 <ul>
 <li>Regulation of medicine being taken by patient, and observation of amount taken.
 <li>Analysis of patients who were diagnosed/not diagnosed and answering any medical questions that they may have.
@@ -59,11 +60,23 @@ function rollover(name, filename)
 <li>Providing over-the-counter drugs, and non-prescription drugs.
 <li>Careful monetoring over the disease state of a patient.
 </ul>
+<br>
 <p>The medium yearly wage for pharmacists was $116,670 in May 2012. The medium wage is the wage at which half the workers in an occupation earned more than that amount and half earned less. The lowest 10% earned less than $89,280 a year, and the top 10% percent earned more than $145,910 a year. The medians wage was abput $56.09 an hour.</p>
+<br>
 Click <a href="description.html">here</a> for a brief description on what the career involves.<br>
 Click <a href="education.html">here</a> to find out what you need to become a pharmacist!<br>
 Click <a href="index.html">here</a> to go to the main page.<br><br>
 
   </body>
 </html>
+<footer>
 Citations: <br>Pharmacist: Salary. (n.d.). Retrieved December 9, 2014, from http://money.usnews.com/careers/best-jobs/pharmacist/salary <br> Pharmacist. (2014, July 12). Retrieved December 9, 2014, from http://en.wikipedia.org/wiki/Pharmacist
+
+	remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'sp_custom_footer' );
+function sp_custom_footer() {
+	?>
+	<p>&copy; Copyright 2012 <a href="http://mydomain.com/">My Domain</a> &middot; All Rights Reserved &middot; Powered by <a href="http://wordpress.org/">WordPress</a> &middot; <a href="http://mydomain.com/wp-admin">Admin</a></p>
+	<?php
+}
+</footer>
