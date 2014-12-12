@@ -49,8 +49,45 @@
         <h3>
 <a id="exploring-the-career-of-a-pharmacist" class="anchor" href="#exploring-the-career-of-a-pharmacist" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exploring the career of a Pharmacist.</h3>
 
-<p><img src="http://www.careerealism.com/home/jtodonnell/careerealism.com/wp-content/uploads/2013/01/pharmacist-jobs.jpg" alt="A pharmacist">
-Image from <a href="http://www.careerealism.com/pharmacist-jobs/">Careerealism</a></p>
+<!--LIGHTBOX-->
+<link href="tanstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
+<!--ROLLOVER-->
+<!--YOU NEED THIS JAVASCRIPT CODE FOR THE ROLLOVER-->
+<script type="text/javascript">
+if(document.images)
+{
+  var image_array = new Array();
+	
+  // path to the directory with images
+  var path = 'images/';
+  // enumeration of the "active" images
+  image_array[0] = path + "image1.gif";
+  image_array[1] = path + "image2.gif";
+  var preload_image = new Array ();
+ 
+  for(var i=0; i<image_array.length; i++)
+  {
+    preload_image[i]= new Image();
+    preload_image[i].src = image_array[i];
+  }
+}
+function rollover(name, filename)
+{
+  document.images[name].src = filename;
+}
+</script>
+
+<!--ROLLOVER AND LIGHTBOX IMAGE-->
+<a href="http://www.careerealism.com/home/jtodonnell/careerealism.com/wp-content/uploads/2013/01/pharmacist-jobs.jpg" rel="lightbox" onmouseover="rollover('button1','pharmacist.jpg')" 
+            onmouseout="rollover('button1','http://www.careerealism.com/home/jtodonnell/careerealism.com/wp-content/uploads/2013/01/pharmacist-jobs.jpg')"> 
+<img name="button1" src="http://www.careerealism.com/home/jtodonnell/careerealism.com/wp-content/uploads/2013/01/pharmacist-jobs.jpg" alt="A pharmacist"></a>
+
+Image from <a href="http://www.careerealism.com/pharmacist-jobs/">Careerealism</a> and <a href="http://cdn.cnwimg.com/wp-content/uploads/2010/10/pharmacist.jpg">Cnwimg</a></p>
 
 <pre><code>
 </code></pre>
